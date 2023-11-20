@@ -13,6 +13,7 @@ import Slider from './slider';
 
 export default function Home() {
   const formItemStyles = "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50";
+  const counterStyles = "bg-white text-purple-800 p-6 rounded-2xl w-full text-center flex flex-col gap-2 justify-center";
 
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -33,13 +34,37 @@ export default function Home() {
           <Image src="/aboutus.jpeg" alt="Sobre nosotros" layout='fill' objectFit='cover' className='shadow-2xl' />
         </div>
       </section>
-      <section className='max-w-screen-xl w-full mx-auto px-5 py-10'>
+      <section className='max-w-screen-xl w-full mx-auto px-5 pt-4 pb-20'>
         <Slider />
       </section>
-      <section className="w-full bg-slate-100 py-20">
+      <section className="w-full bg-slate-100 pt-20">
         <div className="max-w-screen-xl w-full mx-auto px-5 flex flex-col gap-5">
           <div className="text-4xl font-bold w-full text-center mb-5">Testimonios</div>
           <Testimonials />
+        </div>
+      </section>
+      <section className="w-full bg-purple-800 py-20 text-white relative">
+        <Image src={'/slides/s0.jpeg'} alt="" layout='fill' objectFit='cover' className="absolute w-100 h-100 opacity-20" />
+        <div className="max-w-screen-xl w-full mx-auto px-5 flex flex-col gap-5 relative z-10">
+          <div className="text-4xl font-bold w-full text-center mb-5">Nuestra experiencia en números</div>
+          <div className="w-full grid grid-cols-2 lg:flex gap-6">
+            <div className={`${counterStyles}`}>
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold">+200</div>
+              <div className="text-lg">Estudiantes graduados</div>
+            </div>
+            <div className={`${counterStyles}`}>
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold">+400</div>
+              <div className="text-lg">Padres felices</div>
+            </div>
+            <div className={`${counterStyles}`}>
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold">+30</div>
+              <div className="text-lg">Actividades</div>
+            </div>
+            <div className={`${counterStyles}`}>
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold">+40</div>
+              <div className="text-lg">Paseos culturales</div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="max-w-screen-xl w-full mx-auto px-5 flex gap-6 py-20 flex-wrap md:flex-nowrap">

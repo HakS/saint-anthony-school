@@ -23,23 +23,12 @@ export default function Slider() {
     <div className="w-full">
       <Swiper
         grabCursor={true}
-        effect={'creative'}
         loop={true}
         autoplay={{
           delay: 5000,
         }}
-        creativeEffect={{
-          prev: {
-            shadow: true,
-            translate: ['-120%', 0, -500],
-          },
-          next: {
-            shadow: true,
-            translate: ['120%', 0, -500],
-          },
-        }}
         modules={[EffectCreative, Autoplay]}
-        className="h-96"
+        className="h-96 shadow-xl"
       >
         <SwiperSlide>
           <Image
