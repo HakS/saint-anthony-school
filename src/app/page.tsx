@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Carousel from './carousel'
+import Hero from './hero'
 import MainMenu from './main-menu';
 import SimpleCTA from './simple-cta';
 import Testimonials from './testimonials';
@@ -9,6 +9,7 @@ import { MdMail } from "react-icons/md";
 import { BiWorld } from "react-icons/bi";
 import Link from 'next/link';
 import Button from './button';
+import Slider from './slider';
 
 export default function Home() {
   const formItemStyles = "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50";
@@ -21,7 +22,7 @@ export default function Home() {
           <MainMenu />
         </nav>
       </section>
-      <Carousel />
+      <Hero />
       <section className='max-w-screen-xl w-full mx-auto px-5 py-20 flex flex-col md:grid grid-cols-2 grid-flow-col gap-4'>
         <SimpleCTA
           header={"Sabiduría, Honestidad, Progreso"}
@@ -31,6 +32,9 @@ export default function Home() {
         <div className="relative w-full h-48 md:w-auto -order-1 md:order-1 md:h-auto mb-5">
           <Image src="/aboutus.jpeg" alt="Sobre nosotros" layout='fill' objectFit='cover' className='shadow-2xl' />
         </div>
+      </section>
+      <section className='max-w-screen-xl w-full mx-auto px-5 py-10'>
+        <Slider />
       </section>
       <section className="w-full bg-slate-100 py-20">
         <div className="max-w-screen-xl w-full mx-auto px-5 flex flex-col gap-5">
