@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </section>
       <section className="max-w-screen-xl w-full mx-auto px-5 flex gap-6 py-20 flex-wrap md:flex-nowrap">
-        <div className="shadow-xl border rounded border-slate-100 bg-white w-full md:w-1/3">
+        <div className="shadow-xl border rounded border-slate-100 bg-white w-full md:w-1/2 lg:w-1/3">
           <div className="text-xl font-bold w-full p-5 mb-5 text-white bg-amber-500">¡Matricúlate yá!</div>
           <div className="grid grid-cols-1 gap-6 p-5 text-gray-700">
             <label className="block">
@@ -86,7 +86,7 @@ export default function Home() {
             <Button text="Matricularme" />
           </div>
         </div>
-        <div className='w-full md:w-2/3'>
+        <div className='w-full md:w-1/2 lg:w-2/3'>
           <div className="text-3xl font-bold w-full mb-5">Se tú, se exitoso</div>
           <div className="flex flex-wrap sm:grid grid-cols-2 grid-flow-row gap-6">
             <div className='flex flex-col gap-5'>
