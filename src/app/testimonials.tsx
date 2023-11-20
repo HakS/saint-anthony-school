@@ -26,10 +26,20 @@ export default function Testimonials() {
   return (
     <div className="w-full">
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
+        slidesPerView={1}
+        spaceBetween={15}
         grabCursor={true}
         loop={true}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
       >
         <SwiperSlide>
           <Testimonial

@@ -11,7 +11,7 @@ function SliderInfo(props: {text: string}) {
   return (
     <div className='absolute top-0 left-0 w-full h-full flex justify-center z-10'>
       <div className="max-w-screen-xl h-full w-full">
-        <div className="h-full w-1/2 flex items-center p-10 text-5xl drop-shadow-md font-bold text-white">
+        <div className="h-full w-full md:w-1/2 flex items-center p-10 text-5xl drop-shadow-md font-bold text-white">
           {props.text}
         </div>
       </div>
@@ -51,7 +51,7 @@ export default function Carousel() {
           />
           <div className='absolute top-0 left-0 w-full h-full flex justify-center z-10'>
             <div className="max-w-screen-xl h-full w-full">
-              <div className="h-full w-1/2 flex flex-col justify-center p-10 drop-shadow-md text-white bg-purple-800 bg-opacity-40">
+              <div className="h-full w-full md:w-1/2 flex flex-col justify-center p-10 drop-shadow-md text-white bg-purple-800 bg-opacity-40">
                 <SimpleCTA
                   header={"Bienvenidos"}
                   body={"Encabezado atractivo que resuma la esencia de la escuela. Breve mensaje de bienvenida destacando la amabilidad, la creatividad y la confianza en el ambiente educativo. Creatividad y Enfoque en Inglés"}
