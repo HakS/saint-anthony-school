@@ -1,7 +1,9 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css'
+import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 import { RiDoubleQuotesL } from "react-icons/ri";
 import Image from 'next/image';
@@ -29,7 +31,9 @@ export default function Testimonials() {
         slidesPerView={1}
         spaceBetween={15}
         grabCursor={true}
+        pagination={true}
         loop={true}
+        modules={[Pagination]}
         breakpoints={{
           768: {
             slidesPerView: 2,

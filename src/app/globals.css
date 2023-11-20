@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --swiper-pagination-color: rgb(107 33 168);
 }
 
 body {
@@ -15,6 +16,13 @@ body {
 
 .swiper-custom {
   height: 100vh;
+}
+
+.slider {
+  --swiper-pagination-bottom: 0px;
+  .swiper-pagination {
+    background-color: #ffffff99;
+  }
 }
 
 #main-nav {

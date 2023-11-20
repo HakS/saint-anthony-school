@@ -2,8 +2,9 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
+import 'swiper/css/pagination';
 import 'swiper/css/autoplay'
-import { Autoplay, EffectCreative } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 
 function SliderInfo(props: {text: string}) {
@@ -27,8 +28,9 @@ export default function Slider() {
         autoplay={{
           delay: 5000,
         }}
-        modules={[EffectCreative, Autoplay]}
-        className="h-96 shadow-xl"
+        pagination={true}
+        modules={[Pagination, Autoplay]}
+        className="h-96 shadow-xl slider"
       >
         <SwiperSlide>
           <Image
@@ -36,6 +38,7 @@ export default function Slider() {
             src='/slides/s0.jpeg'
             layout='fill'
             objectFit='cover'
+            // className="mb-20 overflow-hidden"
           />
           <SliderInfo text={"Gobierno estudiantil 2023"}/>
         </SwiperSlide>
@@ -45,6 +48,7 @@ export default function Slider() {
             src='/slides/s1.jpg'
             layout='fill'
             objectFit='cover'
+            // className="mb-20 overflow-hidden"
           />
           <SliderInfo text={"Gobierno estudiantil 2023"}/>
         </SwiperSlide>
@@ -54,6 +58,7 @@ export default function Slider() {
             src='/slides/s2.jpg'
             layout='fill'
             objectFit='cover'
+            // className="mb-20 overflow-hidden"
           />
           <SliderInfo text={"Limpieza de playa - servicio comunitario"}/>
         </SwiperSlide>
@@ -63,6 +68,7 @@ export default function Slider() {
             src='/slides/s3.jpg'
             layout='fill'
             objectFit='cover'
+            // className="mb-20 overflow-hidden"
           />
           <SliderInfo text={"Olimpiadas de matemáticas 2023"}/>
         </SwiperSlide>
@@ -72,6 +78,7 @@ export default function Slider() {
             src='/slides/s4.jpg'
             layout='fill'
             objectFit='cover'
+            // className="mb-20 overflow-hidden"
           />
           <SliderInfo text={"Gira estudiantil - Nike Eco League"}/>
         </SwiperSlide>
@@ -81,6 +88,7 @@ export default function Slider() {
             src='/slides/s5.jpg'
             layout='fill'
             objectFit='cover'
+            // className="mb-20 overflow-hidden"
           />
           <SliderInfo text={"Carnavalitos 2023"}/>
         </SwiperSlide>
